@@ -2,7 +2,7 @@ function! plum#heredoc#Heredoc()
   return plum#CreateAction(
         \ 'plum#heredoc#Heredoc',
         \ function('plum#heredoc#IsHeredoc'),
-        \ function('plum#term#SmartTerminal'))
+        \ function('plum#term#ApplySmartTerminalCommand'))
 endfunction
 
 function! plum#heredoc#IsHeredoc(context)
