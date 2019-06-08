@@ -12,7 +12,7 @@ function! plum#heredoc#IsHeredoc(context)
     return 0
   endif
 
-  let line = context.line
+  let line = getline(line('.'))
 
   let indent = 0
   let space = ''
