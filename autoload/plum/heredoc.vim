@@ -38,7 +38,7 @@ function! plum#heredoc#IsHeredoc(context)
     endif
 
     if s:Strip(curline) ==# 'EOF'
-      if strpart(curline, indent, 3) !=# 'EOF'
+      if strpart(curline, indent) !=# 'EOF'
         return 0
       endif
       let context.match = strpart(join(lines, "\n"), 2)
