@@ -8,7 +8,7 @@ endfunction
 function! plum#heredoc#IsHeredoc(context)
   let context = a:context
 
-  if context.mode !=# 'n' && context.mode !=# 'i')
+  if context.mode !=# 'n' && context.mode !=# 'i'
     return 0
   endif
 
