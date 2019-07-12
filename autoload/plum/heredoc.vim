@@ -21,7 +21,7 @@ function! plum#heredoc#IsHeredoc(context)
     let space = space . ' '
   endwhile
 
-  if strpart(line, indent, 2) !=# '$ ' || (line !~# '<<EOF' && line !=# "<<'EOF'")
+  if strpart(line, indent, 2) !=# '$ ' || (line !~# '<<EOF' && line !~# "<<'EOF'")
     return 0
   endif
 

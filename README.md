@@ -2,8 +2,9 @@
 
 Allows you to execute heredocs like so:
 
-    $ cat <<EOF
+    $ cat <<'EOF'
       this is a heredoc
+      $foo
     EOF
 
 It will trim the whitespace, so that the EOF marker is reconized.
